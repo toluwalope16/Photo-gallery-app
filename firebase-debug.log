@@ -1,0 +1,150 @@
+[debug] [2023-06-15T14:56:31.349Z] ----------------------------------------------------------------------
+[debug] [2023-06-15T14:56:31.351Z] Command:       /home/gitpod/.nvm/versions/node/v18.16.0/bin/node /home/gitpod/.nvm/versions/node/v18.16.0/bin/firebase init
+[debug] [2023-06-15T14:56:31.351Z] CLI Version:   12.3.1
+[debug] [2023-06-15T14:56:31.352Z] Platform:      linux
+[debug] [2023-06-15T14:56:31.352Z] Node Version:  v18.16.0
+[debug] [2023-06-15T14:56:31.352Z] Time:          Thu Jun 15 2023 14:56:31 GMT+0000 (GMT)
+[debug] [2023-06-15T14:56:31.353Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-15T14:56:31.361Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-15T14:56:31.361Z] > authorizing via signed-in user (toluodole16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /workspace/Photo-gallery-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-15T14:57:37.603Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-15T14:57:37.604Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"tito11-photo-gallery-app","name":"tito11-photo-gallery-app"}
+[debug] [2023-06-15T14:57:38.441Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-15T14:57:38.442Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5855227114814340243"}
+[debug] [2023-06-15T14:57:38.443Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5855227114814340243 [none]
+[debug] [2023-06-15T14:57:39.218Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5855227114814340243 200
+[debug] [2023-06-15T14:57:39.218Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5855227114814340243 {"name":"operations/cp.5855227114814340243","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-06-15T14:57:39.236Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-06-15T14:58:05.971Z] ----------------------------------------------------------------------
+[debug] [2023-06-15T14:58:05.973Z] Command:       /home/gitpod/.nvm/versions/node/v18.16.0/bin/node /home/gitpod/.nvm/versions/node/v18.16.0/bin/firebase init
+[debug] [2023-06-15T14:58:05.974Z] CLI Version:   12.3.1
+[debug] [2023-06-15T14:58:05.974Z] Platform:      linux
+[debug] [2023-06-15T14:58:05.974Z] Node Version:  v18.16.0
+[debug] [2023-06-15T14:58:05.975Z] Time:          Thu Jun 15 2023 14:58:05 GMT+0000 (GMT)
+[debug] [2023-06-15T14:58:05.975Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-15T14:58:05.981Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-15T14:58:05.982Z] > authorizing via signed-in user (toluodole16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /workspace/Photo-gallery-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-15T14:58:35.154Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-15T14:58:35.154Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"tito11-photo-gallery-app","name":"tito11-photo-gallery-app"}
+[debug] [2023-06-15T14:58:35.958Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-15T14:58:35.958Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7047397705297667056"}
+[debug] [2023-06-15T14:58:35.959Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7047397705297667056 [none]
+[debug] [2023-06-15T14:58:36.715Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7047397705297667056 200
+[debug] [2023-06-15T14:58:36.715Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7047397705297667056 {"name":"operations/cp.7047397705297667056","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-06-15T14:58:36.740Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-06-15T14:58:46.811Z] ----------------------------------------------------------------------
+[debug] [2023-06-15T14:58:46.813Z] Command:       /home/gitpod/.nvm/versions/node/v18.16.0/bin/node /home/gitpod/.nvm/versions/node/v18.16.0/bin/firebase init
+[debug] [2023-06-15T14:58:46.813Z] CLI Version:   12.3.1
+[debug] [2023-06-15T14:58:46.813Z] Platform:      linux
+[debug] [2023-06-15T14:58:46.814Z] Node Version:  v18.16.0
+[debug] [2023-06-15T14:58:46.814Z] Time:          Thu Jun 15 2023 14:58:46 GMT+0000 (GMT)
+[debug] [2023-06-15T14:58:46.814Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-15T14:58:46.819Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-15T14:58:46.820Z] > authorizing via signed-in user (toluodole16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /workspace/Photo-gallery-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-15T14:59:10.352Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-15T14:59:10.352Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"tito-photo-gallery-app","name":"tito-photo-gallery-app"}
+[debug] [2023-06-15T14:59:11.146Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-15T14:59:11.147Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.4931370299984803816"}
+[debug] [2023-06-15T14:59:11.148Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4931370299984803816 [none]
+[debug] [2023-06-15T14:59:11.954Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4931370299984803816 200
+[debug] [2023-06-15T14:59:11.954Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4931370299984803816 {"name":"operations/cp.4931370299984803816","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-06-15T14:59:11.975Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/gitpod/.nvm/versions/node/v18.16.0/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
